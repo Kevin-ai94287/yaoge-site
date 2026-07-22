@@ -5,42 +5,119 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>万科业主AI办公公开课：3招让PPT、日报、述职报告效率翻倍</title>
 <meta name="description" content="7月19日，腰哥为海棠驿万科业主带来一场AI办公赋能公开课，现场演示了如何用AI系统快速生成PPT、日报等文书，并分享了AI会议同传的实战经验。">
+<link rel="stylesheet" href="/styles.css">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="canonical" href="https://yaoge.ai.aituwei.com/zh/events/20260722-wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/">
+<style>
+html { color-scheme: light !important; background: #f4f5f2 !important; }
+body.ipz-article-page { margin: 0 !important; background: #f4f5f2 !important; color: #17201e !important;
+  font-family: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif !important;
+  letter-spacing: 0 !important; -webkit-font-smoothing: antialiased; }
+.ipz-article-page * { box-sizing: border-box; }
+.ipz-header { position: sticky; top: 0; z-index: 20; width: 100%; background: rgba(255,255,255,.96) !important;
+  border-bottom: 1px solid #dfe3df; backdrop-filter: blur(12px); }
+.ipz-header-inner { width: min(1120px, calc(100% - 48px)); height: 68px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.ipz-brand { color: #101614 !important; text-decoration: none !important; font-size: 22px !important;
+  line-height: 1 !important; font-weight: 800 !important; letter-spacing: 0 !important; }
+.ipz-nav { display: flex; align-items: center; gap: 22px; white-space: nowrap; }
+.ipz-nav a { color: #52605c !important; text-decoration: none !important; font-size: 14px !important;
+  line-height: 1.2 !important; letter-spacing: 0 !important; }
+.ipz-nav a:hover { color: #087f6c !important; }
+.ipz-nav .lang-switch { padding-left: 18px; border-left: 1px solid #d8ddda; color: #087f6c !important; }
+.ipz-main { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 34px 0 88px; }
+.ipz-back { display: inline-flex; align-items: center; min-height: 36px; color: #52605c !important;
+  text-decoration: none !important; font-size: 14px !important; letter-spacing: 0 !important; }
+.ipz-back:hover { color: #087f6c !important; }
+.ipz-article { width: min(820px, 100%); margin: 36px auto 0; }
+.ipz-kicker { display: flex; align-items: center; gap: 10px; margin: 0 0 20px !important; color: #087f6c !important;
+  font-size: 13px !important; line-height: 1.4 !important; font-weight: 750 !important; letter-spacing: .08em !important;
+  text-transform: uppercase; }
+.ipz-kicker::before { content: ""; width: 30px; height: 3px; background: #e44d3a; }
+.ipz-article h1 { margin: 0 !important; color: #101614 !important; font-size: clamp(40px, 6vw, 68px) !important;
+  line-height: 1.08 !important; font-weight: 850 !important; letter-spacing: 0 !important; text-wrap: balance; }
+.ipz-deck { margin: 28px 0 36px !important; padding: 0 0 0 22px; border-left: 4px solid #087f6c;
+  color: #43504c !important; font-size: 21px !important; line-height: 1.75 !important; letter-spacing: 0 !important; }
+.ipz-rule { height: 1px; margin: 0 0 42px; background: #cfd6d2; border: 0; }
+.ipz-content { color: #26312e !important; font-size: 18px !important; line-height: 1.9 !important; letter-spacing: 0 !important; }
+.ipz-content p { margin: 0 0 26px !important; color: #26312e !important; font: inherit !important;
+  line-height: 1.9 !important; letter-spacing: 0 !important; }
+.ipz-content h2, .ipz-content h3, .ipz-content h4 { color: #101614 !important; letter-spacing: 0 !important;
+  font-weight: 800 !important; text-wrap: balance; }
+.ipz-content h2 { margin: 64px 0 22px !important; padding-top: 18px; border-top: 3px solid #17201e;
+  font-size: 32px !important; line-height: 1.3 !important; }
+.ipz-content h3 { margin: 48px 0 18px !important; font-size: 25px !important; line-height: 1.4 !important; }
+.ipz-content h4 { margin: 36px 0 16px !important; font-size: 21px !important; line-height: 1.45 !important; }
+.ipz-content strong { color: #101614 !important; font-weight: 800 !important; }
+.ipz-content a { color: #087f6c !important; text-underline-offset: 4px; }
+.ipz-content ul, .ipz-content ol { margin: 8px 0 30px !important; padding-left: 1.45em !important; }
+.ipz-content li { margin: 10px 0 !important; padding-left: .25em; color: #26312e !important; line-height: 1.8 !important; }
+.ipz-content blockquote { margin: 34px 0 !important; padding: 24px 28px; background: #e7f1ed !important;
+  border-left: 4px solid #087f6c; color: #263b35 !important; font-size: 20px !important; line-height: 1.75 !important; }
+.ipz-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;
+  margin: 36px calc(50% - 50vw) 42px; padding: 0 max(24px, calc((100vw - 1120px) / 2)); }
+.ipz-gallery-single { display: block; margin-left: -70px; margin-right: -70px; padding: 0; }
+.ipz-gallery figure { min-width: 0; margin: 0 !important; overflow: hidden; background: #e4e8e5 !important; }
+.ipz-gallery img { display: block; width: 100% !important; height: 100% !important; min-height: 300px;
+  max-height: 640px; object-fit: cover; border: 0 !important; border-radius: 0 !important; }
+.ipz-gallery-single img { width: 100% !important; height: auto !important; min-height: 0; max-height: 680px; object-fit: contain; }
+.ipz-gallery figcaption { padding: 10px 2px 0; background: #f4f5f2; color: #6a7471 !important;
+  font-size: 12px !important; line-height: 1.5 !important; letter-spacing: 0 !important; }
+.ipz-footer-note { margin: 70px 0 0; padding-top: 22px; border-top: 1px solid #cfd6d2;
+  color: #6a7471 !important; font-size: 13px !important; line-height: 1.6 !important; }
+@media (max-width: 760px) {
+  .ipz-header-inner { width: calc(100% - 36px); height: 58px; }
+  .ipz-brand { font-size: 20px !important; }
+  .ipz-nav a:not(.lang-switch) { display: none; }
+  .ipz-nav .lang-switch { padding-left: 0; border-left: 0; font-size: 13px !important; }
+  .ipz-main { width: calc(100% - 36px); padding: 18px 0 56px; }
+  .ipz-article { margin-top: 24px; }
+  .ipz-kicker { margin-bottom: 16px !important; font-size: 12px !important; }
+  .ipz-article h1 { font-size: 36px !important; line-height: 1.16 !important; }
+  .ipz-deck { margin: 22px 0 30px !important; padding-left: 16px; font-size: 17px !important; line-height: 1.75 !important; }
+  .ipz-rule { margin-bottom: 32px; }
+  .ipz-content { font-size: 17px !important; line-height: 1.85 !important; }
+  .ipz-content p { margin-bottom: 23px !important; line-height: 1.85 !important; }
+  .ipz-content h2 { margin-top: 48px !important; font-size: 26px !important; }
+  .ipz-content h3 { margin-top: 38px !important; font-size: 22px !important; }
+  .ipz-content blockquote { margin: 28px 0 !important; padding: 20px; font-size: 18px !important; }
+  .ipz-gallery, .ipz-gallery-single { grid-template-columns: 1fr; margin: 28px -18px 34px; padding: 0; gap: 10px; }
+  .ipz-gallery img { height: auto !important; min-height: 0; max-height: none; object-fit: contain; }
+  .ipz-gallery figcaption { padding: 8px 18px 0; }
+}
+</style>
 </head>
-<body>
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a href="/zh/" class="site-logo">腰哥</a>
-    <nav class="site-nav"><a href="/zh/">首页</a><a href="/zh/about/">关于</a><a href="/zh/services/">课程</a><a href="/zh/works/">作品成果</a><a href="/zh/insights/">洞察</a><a href="/zh/events/">动态</a><a href="/zh/contact/">联系</a><a href="/" class="lang-switch">EN</a></nav>
+<body class="ipz-article-page">
+<header class="ipz-header">
+  <div class="ipz-header-inner">
+    <a href="/zh/" class="ipz-brand">腰哥</a>
+    <nav class="ipz-nav"><a href="/zh/">首页</a><a href="/zh/about/">关于</a><a href="/zh/services/">课程</a><a href="/zh/works/">作品成果</a><a href="/zh/insights/">洞察</a><a href="/zh/events/">动态</a><a href="/zh/contact/">联系</a><a href="/" class="lang-switch">EN</a></nav>
   </div>
 </header>
-<main class="container page-main">
-  <a href="/zh/events/" class="back-link">← 返回动态</a>
-  <article class="article-body">
+<main class="ipz-main">
+  <a href="/zh/events/" class="ipz-back">← 返回动态</a>
+  <article class="ipz-article">
+    <p class="ipz-kicker">观点与动态 · 深度阅读</p>
     <h1>万科业主AI办公公开课：3招让PPT、日报、述职报告效率翻倍</h1>
-    <p class="section-intro">7月19日，腰哥为海棠驿万科业主带来一场AI办公赋能公开课，现场演示了如何用AI系统快速生成PPT、日报等文书，并分享了AI会议同传的实战经验。</p>
-    <h2>万科业主AI办公公开课：3招让PPT、日报、述职报告效率翻倍</h2>
-<p>7月19日，腰哥受海棠驿万科物业邀请，为业主们带来一场AI办公赋能公开课。现场，腰哥演示了如何用AI系统快速生成PPT、日报和述职报告，并分享了AI会议同传的实战经验。</p>
+    <p class="ipz-deck">7月19日，腰哥为海棠驿万科业主带来一场AI办公赋能公开课，现场演示了如何用AI系统快速生成PPT、日报等文书，并分享了AI会议同传的实战经验。</p>
+    <div class="ipz-rule"></div>
+    <div class="ipz-content"><p>7月19日，腰哥受海棠驿万科物业邀请，为业主们带来一场AI办公赋能公开课。现场，腰哥演示了如何用AI系统快速生成PPT、日报和述职报告，并分享了AI会议同传的实战经验。</p>
+<div class="ipz-gallery ipz-gallery-single"><figure><img src="/assets/media/wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/a24ef4e975e740f99e828a1e6b0b70a1.jpg" alt="文章配图 1" loading="lazy"><figcaption>文章配图 1</figcaption></figure></div>
 <h3>1. 为什么AI办公赋能系统值得学？</h3>
-<p>很多人觉得AI是高科技，离自己的工作很远。其实，AI已经能帮我们处理大量重复性工作。腰哥开发的AI办公赋能系统，专门针对日常办公场景：<br>
-- <strong>快速做PPT</strong>：输入主题，AI自动生成大纲、排版和配图<br>
-- <strong>自动写日报</strong>：输入工作内容，AI整理成结构化文档<br>
-- <strong>一键生成述职报告</strong>：总结工作成果，AI自动生成</p>
+<p>很多人觉得AI是高科技，离自己的工作很远。其实，AI已经能帮我们处理大量重复性工作。腰哥开发的AI办公赋能系统，专门针对日常办公场景：</p>
+<ul><li><strong>快速做PPT</strong>：输入主题，AI自动生成大纲、排版和配图</li><li><strong>自动写日报</strong>：输入工作内容，AI整理成结构化文档</li><li><strong>一键生成述职报告</strong>：总结工作成果，AI自动生成</li></ul>
 <p>这套系统可以帮助你每天节省1-2小时，把时间用在更有价值的事情上。</p>
 <h3>2. 现场实战：腰哥怎么做会议同传？</h3>
 <p>腰哥现场分享了用AI 4.0做会议同传的案例：在跨国会议中，AI实时翻译并记录要点，会议结束后自动生成会议纪要。这个场景让业主们眼前一亮，纷纷表示要马上尝试。</p>
 <h3>3. 公开课现场反馈：业主怎么说？</h3>
-<p>- “原来AI做PPT这么简单，以后不用加班了！”<br>
-- “日报和述职报告一直是头疼的事，这下有救了。”<br>
-- “会议同传这个功能太实用了，我正好需要。”</p>
+<ul><li>“原来AI做PPT这么简单，以后不用加班了！”</li><li>“日报和述职报告一直是头疼的事，这下有救了。”</li><li>“会议同传这个功能太实用了，我正好需要。”</li></ul>
+<div class="ipz-gallery ipz-gallery-single"><figure><img src="/assets/media/wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/628d6e5cf9cc40d78e7de797d75febaf.jpg" alt="文章配图 2" loading="lazy"><figcaption>文章配图 2</figcaption></figure></div>
 <h3>4. 下一个目标：让AI成为每个人的办公助手</h3>
 <p>腰哥将继续打磨AI办公赋能系统，让更多人享受到AI带来的效率提升。如果你也想学习AI办公技巧，记得关注腰哥，获取更多实战干货。</p>
 <p>AI不是未来，是今天的工具。用好它，每天省出2小时。</p>
 <p>（本文由腰哥原创，未经授权不得转载）</p>
-<figure><img src="/media/wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/a24ef4e975e740f99e828a1e6b0b70a1.jpg" alt="" loading="lazy"></figure>
-<figure><img src="/media/wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/628d6e5cf9cc40d78e7de797d75febaf.jpg" alt="" loading="lazy"></figure>
-<figure><img src="/media/wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/24b8765149884f46854216549423376b.jpg" alt="" loading="lazy"></figure>
+<div class="ipz-gallery ipz-gallery-single"><figure><img src="/assets/media/wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/24b8765149884f46854216549423376b.jpg" alt="文章配图 3" loading="lazy"><figcaption>文章配图 3</figcaption></figure></div></div>
+    <p class="ipz-footer-note">腰哥 · 万科业主AI办公公开课：3招让PPT、日报、述职报告效率翻倍</p>
   </article>
 </main>
 </body>
