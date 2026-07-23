@@ -9,24 +9,77 @@
 <link rel="stylesheet" href="/styles.css">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="canonical" href="https://yaoge.ai.aituwei.com/zh/events/">
+<style>
+html { color-scheme: dark !important; background: #0a0a0c !important; }
+body.ipz-listing-page { margin: 0 !important; background: #0a0a0c !important; color: #f4f4f2 !important;
+  font-family: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif !important;
+  letter-spacing: 0 !important; -webkit-font-smoothing: antialiased; }
+.ipz-listing-page * { box-sizing: border-box; }
+.ipz-list-header { width: min(1120px, calc(100% - 48px)); height: 68px; margin: 0 auto;
+  display: flex !important; align-items: center; justify-content: space-between; gap: 24px;
+  border-bottom: 1px solid #29292d; }
+.ipz-list-brand { color: #f7f7f5 !important; text-decoration: none !important; font-size: 22px !important;
+  line-height: 1 !important; font-weight: 850 !important; letter-spacing: 0 !important; }
+.ipz-list-nav { display: flex !important; align-items: center; gap: 22px; white-space: nowrap; }
+.ipz-list-nav a { color: #aaa9ad !important; text-decoration: none !important; font-size: 14px !important;
+  line-height: 1.2 !important; letter-spacing: 0 !important; }
+.ipz-list-nav .nav-cta { color: #ff684d !important; padding-left: 18px; border-left: 1px solid #303034; }
+.ipz-list-main { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 64px 0 90px; }
+.ipz-list-eyebrow { margin: 0 0 18px !important; color: #ff684d !important; font-size: 13px !important;
+  line-height: 1.4 !important; font-weight: 800 !important; letter-spacing: .08em !important; text-transform: uppercase; }
+.ipz-list-head { max-width: 780px; margin-bottom: 48px; }
+.ipz-list-head h1 { margin: 0 0 20px !important; color: #f7f7f5 !important; font-size: 64px !important;
+  line-height: 1.08 !important; font-weight: 850 !important; letter-spacing: 0 !important; }
+.ipz-list-head > p:last-child { margin: 0 !important; color: #aaa9ad !important; font-size: 18px !important;
+  line-height: 1.75 !important; letter-spacing: 0 !important; }
+.ipz-list-grid { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px;
+  background: #29292d; border-top: 1px solid #29292d; border-bottom: 1px solid #29292d; }
+.ipz-list-card { display: grid !important; grid-template-columns:140px minmax(0,1fr); gap:22px; min-width: 0; padding: 24px !important; background: #0a0a0c !important;
+  color: #f4f4f2 !important; text-decoration: none !important; }
+.ipz-list-card:hover { background: #141416 !important; }
+.ipz-list-copy { display:block; min-width:0; }
+.ipz-list-media { display:block; width:100%; aspect-ratio:4/3; overflow:hidden; background:#171719; }
+.ipz-list-media img { display:block; width:100%; height:100%; object-fit:cover; }
+.ipz-list-media-empty { background:linear-gradient(135deg,#171719,#242426); }
+.ipz-list-card time { display: block; margin-bottom: 14px; color: #ff684d !important; font-size: 12px !important;
+  line-height: 1.4 !important; font-weight: 750 !important; letter-spacing: .05em !important; }
+.ipz-list-card h3 { margin: 0 0 14px !important; color: #f7f7f5 !important; font-size: 25px !important;
+  line-height: 1.35 !important; font-weight: 800 !important; letter-spacing: 0 !important; }
+.ipz-list-card p { margin: 0 !important; color: #aaa9ad !important; font-size: 15px !important;
+  line-height: 1.75 !important; letter-spacing: 0 !important; }
+.ipz-list-card:first-child { grid-column: 1 / -1; grid-template-columns:minmax(240px,38%) minmax(0,1fr); padding: 30px !important; }
+.ipz-list-card:first-child h3 { max-width: 850px; font-size: 34px !important; }
+@media (max-width: 760px) {
+  .ipz-list-header { width: calc(100% - 36px); height: 58px; }
+  .ipz-list-brand { font-size: 20px !important; }
+  .ipz-list-nav a:not(.nav-cta) { display: none !important; }
+  .ipz-list-nav .nav-cta { padding-left: 0; border-left: 0; font-size: 13px !important; }
+  .ipz-list-main { width: calc(100% - 36px); padding: 42px 0 60px; }
+  .ipz-list-head { margin-bottom: 34px; }
+  .ipz-list-head h1 { font-size: 38px !important; line-height: 1.14 !important; }
+  .ipz-list-head > p:last-child { font-size: 16px !important; }
+  .ipz-list-grid { grid-template-columns: 1fr; }
+  .ipz-list-card, .ipz-list-card:first-child { grid-column: auto; grid-template-columns:112px minmax(0,1fr); gap:16px; padding: 20px 0 !important; }
+  .ipz-list-card h3, .ipz-list-card:first-child h3 { font-size: 24px !important; }
+}
+</style>
 </head>
-<body>
-<main class="lang-zh">
-  <header class="site-header">
-    <a class="brand" href="/zh/"><span class="brand-mark">↗</span><span>腰哥</span></a>
-    <nav><a href="/zh/#about">关于</a><a href="/zh/#products">产品</a><a href="/zh/#updates">动态</a><a href="/zh/#club">俱乐部</a><a href="/zh/#works">现场</a><a href="/zh/#contact">合作</a><a class="nav-cta" href="/insights/">EN</a></nav>
+<body class="ipz-listing-page">
+<header class="ipz-list-header">
+    <a class="ipz-list-brand" href="/zh/">腰哥</a>
+    <nav class="ipz-list-nav"><a href="/zh/#about">关于</a><a href="/zh/#products">产品</a><a href="/zh/#updates">动态</a><a href="/zh/#club">俱乐部</a><a href="/zh/#works">现场</a><a href="/zh/#contact">合作</a><a class="nav-cta" href="/events/">EN</a></nav>
   </header>
-  <section class="section updates-page">
-    <div class="section-index">LATEST / UPDATES</div>
-    <div class="updates-page-head">
-      <p class="eyebrow"><i></i>最近动态</p>
+<main class="ipz-list-main">
+  <section>
+    <div class="ipz-list-head">
+      <p class="ipz-list-eyebrow">LATEST / UPDATES</p>
       <h1>最新文章与活动</h1>
       <p>这里汇总 IP智造发布到官网的最新文章、活动与实践记录。</p>
     </div>
-    <div class="updates-grid updates-page-grid">
-      <a class="update-card update-card-featured" href="/zh/events/20260722-wan-ke-ye-zhu-zhuan-xiang-ai-gong-kai-ke-yi-tao-xi-tong-gao/"><span>2026-07-22</span><h3>万科业主专享AI公开课：一套系统搞定PPT、日报、述职报告</h3><p>腰哥为万科业主带来AI办公赋能公开课，现场演示一套系统快速生成PPT、日报、述职报告，并分享AI会议同传实战经验。</p></a>
-<a class="update-card" href="/zh/events/20260722-wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/"><span>2026-07-22</span><h3>万科业主AI办公公开课：3招让PPT、日报、述职报告效率翻倍</h3><p>7月19日，腰哥为海棠驿万科业主带来一场AI办公赋能公开课，现场演示了如何用AI系统快速生成PPT、日报等文书，并分享了AI会议同传的实战经验。</p></a>
-<a class="update-card" href="/zh/events/20260720-wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/"><span>2026-07-20</span><h3>万科业主AI办公公开课：3招让PPT、日报、述职报告效率翻倍</h3><p>7月19日，腰哥为海棠驿万科业主带来一场AI办公赋能公开课，现场演示了如何用AI系统快速生成PPT、日报等文书，并分享了AI会议同传的实战经验。</p></a>
+    <div class="ipz-list-grid">
+      <a class="ipz-list-card" href="/zh/events/20260722-wan-ke-ye-zhu-zhuan-xiang-ai-gong-kai-ke-yi-tao-xi-tong-gao/"><span class="ipz-list-media"><img src="/media/wan-ke-ye-zhu-zhuan-xiang-ai-gong-kai-ke-yi-tao-xi-tong-gao/f673b67e70054439866bf5700a32db2d.jpg" alt="万科业主专享AI公开课：一套系统搞定PPT、日报、述职报告" loading="lazy"></span><span class="ipz-list-copy"><time>2026-07-22</time><h3>万科业主专享AI公开课：一套系统搞定PPT、日报、述职报告</h3><p>腰哥为万科业主带来AI办公赋能公开课，现场演示一套系统快速生成PPT、日报、述职报告，并分享AI会议同传实战经验。</p></span></a>
+<a class="ipz-list-card" href="/zh/events/20260722-wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/"><span class="ipz-list-media"><img src="/media/wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/a24ef4e975e740f99e828a1e6b0b70a1.jpg" alt="万科业主AI办公公开课：3招让PPT、日报、述职报告效率翻倍" loading="lazy"></span><span class="ipz-list-copy"><time>2026-07-22</time><h3>万科业主AI办公公开课：3招让PPT、日报、述职报告效率翻倍</h3><p>7月19日，腰哥为海棠驿万科业主带来一场AI办公赋能公开课，现场演示了如何用AI系统快速生成PPT、日报等文书，并分享了AI会议同传的实战经验。</p></span></a>
+<a class="ipz-list-card" href="/zh/events/20260720-wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/"><span class="ipz-list-media"><img src="/media/wan-ke-ye-zhu-ai-ban-gong-gong-kai-ke-3-zhao-rang-ppt-ri-bao/a24ef4e975e740f99e828a1e6b0b70a1.jpg" alt="万科业主AI办公公开课：3招让PPT、日报、述职报告效率翻倍" loading="lazy"></span><span class="ipz-list-copy"><time>2026-07-20</time><h3>万科业主AI办公公开课：3招让PPT、日报、述职报告效率翻倍</h3><p>7月19日，腰哥为海棠驿万科业主带来一场AI办公赋能公开课，现场演示了如何用AI系统快速生成PPT、日报等文书，并分享了AI会议同传的实战经验。</p></span></a>
     </div>
   </section>
 </main>
