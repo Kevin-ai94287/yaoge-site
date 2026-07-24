@@ -3,6 +3,8 @@ title: "Vanke Homeowners Exclusive AI Open Class: One System for PPT, Daily Repo
 date: 2026-07-22
 key: wan-ke-ye-zhu-zhuan-xiang-ai-gong-kai-ke-yi-tao-xi-tong-gao
 summary: "Yaoge delivered an AI office empowerment open class for Vanke homeowners, demonstrating a system that quickly generates PPTs, daily reports, and work summaries, and sharing practical experience in AI real-time meeting interpretation."
+event_id: 21
+cover_fingerprint: 7444dc32b1e180b1b59fb1c0945ae9fbfe4440fc824f14d87fab35383fbef097
 ---
 ## Vanke Homeowners AI Office Open Class Successfully Concluded!
 
